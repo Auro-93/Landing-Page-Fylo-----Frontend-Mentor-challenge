@@ -1,0 +1,212 @@
+.section1{
+    position: relative;
+    background-color: map-get($neutral, light-grayish-blue);
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+
+    @include xs{
+        margin-top: 6rem;
+    }
+
+    @include laptop{
+        margin-top: 12rem;
+       
+    }
+
+    .flex-section1{
+
+        @include desktop-s{
+            display: flex;
+            text-align: left;
+            align-items: center;
+        }
+
+   
+
+        .curve-desktop{
+            display: none;
+
+            @include desktop-s{
+                display: block; 
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: -6rem;
+                height: 8rem;
+            }
+        }
+        
+        .curve-mobile{
+            position: absolute;
+            top: -4rem;
+            left: 0;
+            width: 100%;
+
+            @include xs{
+            display: none;
+            }
+
+            @include iPad{
+                height: 8rem;
+                top: -6rem;  
+            }
+
+            @include desktop-s{
+                display: none;
+            }
+
+
+        }
+
+        .illustration{
+            @include desktop-s{
+                order: 2;
+                flex: 0.4;
+                margin-top: -6rem;
+            }
+          
+            img{
+                @include iPad{
+                    width: 70%;
+                    height: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                }
+
+                @include desktop-s{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }
+
+        .text{
+            margin-top: 4rem;
+
+            @include desktop-s{
+                order: 1;
+                flex: 0.6;
+            }
+
+            h2{
+                text-align: center;
+
+                @include desktop-s{
+                    text-align: left;
+                }
+            }
+
+            p{
+                text-align: left;
+                margin-top: 1.8rem;
+
+            }
+
+            .margin-r{
+                @include desktop-s{
+                 margin-right: 5rem;
+                }
+            }
+
+
+
+            .link{
+                text-align: center;
+
+                @include desktop-s{
+                    text-align: left;
+                }
+
+                    a{
+                        text-align: center;
+                        font-weight: bold;
+                        display: inline-block;
+                        margin: 2.5rem auto 1.5rem;
+                        color: map-get($accent, moderate-cyan);
+                        padding-bottom: 0.4rem;
+                        border-bottom: 1.5px solid map-get($accent, moderate-cyan);
+                        transition: all 0.1s ease-in-out;
+
+                        .hover{
+                            display: none;
+                        }
+
+                        .hover, 
+                        .no-hover{
+                            position: relative;
+                           top: 0.25rem;
+                        }
+
+                    &:hover{
+                        color: map-get($accent, hover2);
+                        border-bottom-color: map-get($accent, hover2);
+
+                        .hover{
+                            display: inline-block;
+                        }
+
+                        .no-hover{
+                            display: none;
+                        }
+                        }
+
+                    
+                    }
+            }
+
+            .testimonial-card{
+                margin: 3rem auto;
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0,0,0, 0.08);
+                border-radius: 0.5rem;
+                padding: 2rem 2.5rem;
+                width: 85%;
+
+                @include desktop-s{
+                    margin-left: 0;
+                    width: 70%;
+                }
+
+                .quotes{
+                
+                    width: 1.5rem;
+                    height: 1.4rem;
+                }
+
+                p{
+                    margin-top: 1rem;
+                    line-height: 1.8rem;
+
+                }
+
+                .testimonial-info{
+                    display: flex;
+                    margin-top: 2rem;
+                    align-items: center;
+                    margin-bottom: 1rem;
+
+                    img{
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        border-radius: 50%;
+                    }
+
+                    .info-text{
+                        margin-left: 1rem;
+
+                        p{
+                            margin-top: 0;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+

@@ -1,0 +1,65 @@
+//Colors
+
+$primary_color: (
+    very-dark-blue: hsl(243, 87%, 12%),
+    desaturated-blue: hsl(238, 22%, 44%)
+);
+
+$accent: (
+    bright-blue: hsl(224, 93%, 58%),
+    moderate-cyan:  hsl(170, 45%, 43%),
+    hover: hsl(221, 97%, 70%),
+    hover2: hsl(170, 44%, 76%)
+);
+
+
+$neutral: (
+    light-grayish-blue: hsl(240, 75%, 98%),
+    light-gray:  hsl(0, 0%, 75%)
+);
+
+
+//Queries
+
+@mixin xs {
+    @media screen and(max-width: 331px)
+    { @content; }
+};
+
+
+@mixin iPad {
+    @media screen and (min-width: 480px) 
+    { @content; }
+};
+
+@mixin laptop {
+   @media screen and (min-width: 768px) 
+   { @content; }
+};
+
+@mixin desktop-s {
+    @media screen and (min-width: 900px) 
+    { @content; }
+ };
+
+
+
+@mixin desktop-l {
+   @media screen and (min-width: 1300px) 
+   { @content; }
+};
+
+@mixin xl{
+   @media screen and (min-width: 1500px) 
+   { @content; }
+};
+
+
+//Transitions
+
+@mixin transition{
+    transition: all 0.3s ease-in-out;
+}
+
+
+
