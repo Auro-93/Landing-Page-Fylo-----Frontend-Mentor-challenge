@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/scss-flexbox-grid-layout-vanilla-javascript-3Jxsn3u5t]
-- Live Site URL: [https://auro-93.github.io/Landing-Page-Fylo-----Frontend-Mentor-challenge/]
+- Solution URL: (https://www.frontendmentor.io/solutions/scss-flexbox-grid-layout-vanilla-javascript-3Jxsn3u5t)
+- Live Site URL: (https://auro-93.github.io/Landing-Page-Fylo-----Frontend-Mentor-challenge/)
 
 ## My process
 
